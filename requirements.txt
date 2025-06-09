@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+python-multipart
+pydantic
+biopython
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+scipy
+supabase

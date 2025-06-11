@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from datetime import datetime
-from app.models.base import AnalysisType, AnalysisStatus
-from app.models.analysis import AnalysisResult
-from app.services.analysis_service import (
+from models.base import AnalysisType, AnalysisStatus
+from models.analysis import AnalysisResult
+from services.analysis_service import (
     run_clustal_analysis, 
     run_jukes_analysis, 
     run_visualization_analysis, 

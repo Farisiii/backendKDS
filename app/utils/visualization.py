@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-from app.models.sequences import ParsedSequence
+from models.sequences import ParsedSequence
 
 def extract_species_groups(sequence_ids: List[str]) -> Tuple[Dict[str, List[str]], Dict[str, str]]:
     """Extract species groups and assign colors"""

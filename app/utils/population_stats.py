@@ -3,7 +3,7 @@ Population genetics statistics calculations
 """
 import numpy as np
 from typing import List, Dict
-from app.models.sequences import ParsedSequence
+from models.sequences import ParsedSequence
 
 def extract_species_name(sequence_id: str) -> str:
     """Extract species name from sequence ID"""

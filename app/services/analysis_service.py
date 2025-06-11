@@ -2,14 +2,14 @@ from typing import Dict
 from datetime import datetime
 import numpy as np
 
-from app.models.base import AnalysisType, AnalysisStatus
-from app.models.analysis import AnalysisResult, ClustalResult, JukesResult, VisualizationResult, PopulationResult
-from app.models.sequences import UploadedData
-from app.utils.distance import calculate_jukes_cantor_distance
-from app.utils.alignment import perform_clustal_omega_alignment
-from app.utils.population_stats import calculate_nucleotide_diversity, calculate_haplotype_diversity, calculate_tajimas_d, calculate_fus_fs, extract_species_name
-from app.utils.visualization import create_dendrogram, create_heatmap, create_pca
-from app.services.supabase_service import upload_to_supabase
+from models.base import AnalysisType, AnalysisStatus
+from models.analysis import AnalysisResult, ClustalResult, JukesResult, VisualizationResult, PopulationResult
+from models.sequences import UploadedData
+from utils.distance import calculate_jukes_cantor_distance
+from utils.alignment import perform_clustal_omega_alignment
+from utils.population_stats import calculate_nucleotide_diversity, calculate_haplotype_diversity, calculate_tajimas_d, calculate_fus_fs, extract_species_name
+from utils.visualization import create_dendrogram, create_heatmap, create_pca
+from services.supabase_service import upload_to_supabase
 
 # Global storage for analysis results and uploaded data
 analysis_storage: Dict[str, AnalysisResult] = {}

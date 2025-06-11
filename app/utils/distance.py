@@ -1,6 +1,6 @@
 import numpy as np
 from typing import List, Tuple, Dict
-from app.models.sequences import ParsedSequence
+from models.sequences import ParsedSequence
 
 def calculate_jukes_cantor_distance(sequences: List[ParsedSequence]) -> Tuple[np.ndarray, Dict, Dict]:
     """Calculate Jukes-Cantor distance matrix with proper model parameters"""

@@ -7,7 +7,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio.Align.Applications import ClustalOmegaCommandline
 from Bio.Align import MultipleSeqAlignment
-from app.models.sequences import ParsedSequence
+from models.sequences import ParsedSequence
 
 def perform_clustal_omega_alignment(sequences: List[ParsedSequence]) -> tuple:
     """Perform actual Clustal Omega multiple sequence alignment"""

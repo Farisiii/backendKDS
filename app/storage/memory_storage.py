@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
 from datetime import datetime
-from app.models.analysis import AnalysisResult
-from app.models.sequences import UploadedData
+from models.analysis import AnalysisResult
+from models.sequences import UploadedData
 
 class MemoryStorage:
     """In-memory storage for analysis results and uploaded data"""

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from supabase import create_client, Client
-from app.config import get_settings
+from config import get_settings
 
 def setup_middleware(app: FastAPI) -> None:
     """Setup middleware for the FastAPI application"""

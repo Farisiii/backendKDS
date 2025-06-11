@@ -1,7 +1,7 @@
 from fastapi import UploadFile
 from typing import List
-from app.core.exceptions import FileValidationError, InsufficientDataError
-from app.models.sequences import ParsedSequence
+from core.exceptions import FileValidationError, InsufficientDataError
+from models.sequences import ParsedSequence
 
 def validate_fasta_file(file: UploadFile) -> None:
     """Validate uploaded FASTA file"""

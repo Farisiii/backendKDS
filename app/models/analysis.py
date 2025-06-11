@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Dict, List, Optional, Union, Any
 from datetime import datetime
-from app.models.base import BaseAnalysisResult, AnalysisType, AnalysisStatus
+from models.base import BaseAnalysisResult, AnalysisType, AnalysisStatus
 
 class ClustalResult(BaseAnalysisResult):
     analysisType: AnalysisType = AnalysisType.clustal

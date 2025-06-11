@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 from datetime import datetime
-from app.config import get_settings
+from config import get_settings
 from storage.memory_storage import get_storage
-from app.services.analysis_service import get_system_statistics
+from services.analysis_service import get_system_statistics
 
 router = APIRouter()
 

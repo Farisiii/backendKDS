@@ -1,7 +1,7 @@
 from typing import List, Dict, Any
 from datetime import datetime
-from app.models.sequences import ParsedSequence, UploadedData
-from app.core.exceptions import FileValidationError
+from models.sequences import ParsedSequence, UploadedData
+from core.exceptions import FileValidationError
 
 def parse_fasta_content(content: str, filename: str = "demo.fasta") -> UploadedData:
     """Parse FASTA content and extract metadata from headers"""

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File
 from datetime import datetime
-from app.config import get_settings
-from app.utils.parsers import parse_fasta_content, create_demo_fasta
+from config import get_settings
+from utils.parsers import parse_fasta_content, create_demo_fasta
 from storage.memory_storage import get_storage
 
 router = APIRouter()

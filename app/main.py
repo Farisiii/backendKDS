@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.config import get_settings
-from app.dependencies import setup_middleware
-from app.routers import health, upload, data, analysis
+from config import get_settings
+from dependencies import setup_middleware
+from routers import health, upload, data, analysis
 import warnings
 
 warnings.filterwarnings('ignore')

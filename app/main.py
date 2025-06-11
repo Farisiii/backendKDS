@@ -7,7 +7,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def create_app() -> FastAPI:
-    """Create and configure FastAPI application"""
     settings = get_settings()
     
     app = FastAPI(
@@ -16,10 +15,8 @@ def create_app() -> FastAPI:
         description="Genetic Mapping and Population Analysis Platform"
     )
     
-    # Setup middleware
     setup_middleware(app)
     
-    # Include routers
     app.include_router(health.router, tags=["health"])
     app.include_router(upload.router, prefix="/upload", tags=["upload"])
     app.include_router(data.router, prefix="/data", tags=["data"])
@@ -39,4 +36,7 @@ app = create_app()
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    import os
+    
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, reload=False)
